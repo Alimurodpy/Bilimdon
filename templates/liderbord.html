@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/liderbord.css">
+    <title>Liderboard</title>
+</head>
+<body>
+    <!--SITE HEADER-->
+    <header class="site-header">
+        <div class="container site-header-container">
+            <div class="left-icon">
+                <a href="./home.html">
+                    <img src="./assets/media/left-icon.svg" alt="">
+                </a>                
+            </div>
+            <h2>Liderboard</h2>
+            <!--Bilimdon Logosi-->
+            <a href="./index.html">
+                <img src="./assets/media/bilimdon-logo.svg" alt="" width="200px">
+            </a>
+            
+        </div>
+    </header>
+
+    <div class="tabs">
+        <div class="tab active" data-tab="weekly">Haftalik</div>
+        <div class="tab" data-tab="monthly">Oylik</div>
+        <div class="tab" data-tab="alltime">Butun davr</div>
+    </div>
+
+    <table id="leaderboard-table">
+        <thead>
+          <tr>
+            <th>№</th>
+            <th>Ism-familiya</th>
+            <th>Ball</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- JavaScript will populate rows here -->
+        </tbody>
+    </table>
+
+
+    <script src="./js/liderbord.js"></script>
+    
+</body>
+</html>
+

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/avatars.css">
+    <title>Profil yaratish</title>
+</head>
+<body>
+    <!--SITE HEADER-->
+    <header class="site-header">
+        <div class="container site-header-container">
+            <div class="left-icon">
+                <img src="./assets/media/left-icon.svg" alt="">
+            </div>
+            <h2>Profil yaratish</h2>
+            <!--Bilimdon Logosi-->
+            <a href="./index.html">
+                <img src="./assets/media/bilimdon-logo.svg" alt="" width="200px">
+            </a>
+            
+        </div>
+    </header>
+
+    <div class="main-avatar-icon">
+        <img id="main-avatar" src="./assets/media/mainavatar-icon.svg" alt="" width="220px">
+    </div>
+
+    <section class="container changable-avatars">
+        <img src="./assets/media/avatars/first-girl.svg" alt="" class="avatar first-avatar" width="150px" onclick="changeAvatar(this)">
+        <img src="./assets/media/avatars/second-girl.svg" alt="" class="avatar second-avatar" width="150px" onclick="changeAvatar(this)">
+        <img src="./assets/media/avatars/third-girl.svg" alt="" class="avatar third-avatar" width="150px" onclick="changeAvatar(this)">
+        <img src="./assets/media/avatars/first-boy.svg" alt="" class="avatar forth-avatar" width="150px" onclick="changeAvatar(this)">
+        <img src="./assets/media/avatars/second-boy.svg" alt="" class="avatar fifth-avatar" width="150px" onclick="changeAvatar(this)">
+        <img src="./assets/media/avatars/third-boy.svg" alt="" class="avatar sixth-avatar" width="150px" onclick="changeAvatar(this)">
+    </section>
+
+    <button class="container save-avatar" onclick="saveAvatar()">Avatarni tanlash</button>
+
+    
+    <script src="./js/avatars.js"></script>
+    
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/registration.css">
+    <title>Ro‘yhatdan o‘tish</title>
+</head>
+<body>
+     <!--SITE HEADER-->
+     <!--Bilimdon Logosi-->
+     <div class="container">
+        <a href="./index.html">
+        <img src="./assets/media/bilimdon-logo.svg" alt="">
+        </a>
+     </div>
+         
+    <div class="container">
+        <!--Form-image-->
+        <div class="form-img">
+            <img src="./assets/media/bear.svg" alt="" width="450px">
+        </div>
+
+        <!--Form-->
+        <div class="form-container">
+            <label for="">Ism-familiya</label>
+            <input type="text" id="fullname" placeholder="Ismingizni kiriting">
+
+            <label for="" class="icon-label">
+                Tug‘ilgan sana
+                <img src="./assets/media/calendar-icon.svg" alt="" width="40px">
+            </label>
+            <input type="data" id="birthdate" placeholder="15.07.2007">
+
+            <label for="">Telefon raqam</label>
+            <input type="tel" name="" id="phone" placeholder="+998 xxx xx xx">
+
+            <label for="">Parol</label>
+            <input type="password" name="" id="password" placeholder="Kamida 8 ta harf, raqam va bitta katta harf">
+
+            <button id="registrationBtn" class="registration-btn" onclick="submitForm()">Ro‘yhatdan o‘tish</button>
+        </div>
+        
+    </div>
+    
+    <script src="./js/registration.js"></script>
+</body>
+</html>

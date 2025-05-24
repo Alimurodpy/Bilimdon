@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Harflar o‘yini</title>
+    <link rel="stylesheet" href="./assets/css/first-game.css" />
+</head>
+<body>
+    <!--SITE HEADER-->
+    <header class="site-header container">
+        <div class="container site-header-container">
+            <div class="left-icon">
+                <a href="./home.html">
+                    <img src="./assets/media/left-icon.svg" alt="">
+                </a>
+            </div>
+            <h2 class="">So‘zni to‘gri o‘qi</h2>
+            <!--Bilimdon Logosi-->
+            <a href="./index.html">
+                <img src="./assets/media/bilimdon-logo.svg" alt="" width="200px">
+            </a>
+            
+        </div>
+    </header>
+
+    <div class="container hero-container">
+        <img id="play-image" class="speaker-icon" src="../assets/media/openmoji_speaker-medium-volume.svg" alt="">
+        <audio id="my-audio" src="./assets/media/games-audios/kids-music-sound.mp3"></audio>
+        <div class="back-forward-btn">
+            <a href="./second-game.html">
+                <img src="./assets/media/back-icon.png" alt="" width="200px">
+            </a>
+        </div>
+        <div class="word">
+            <!-- Rasm -->
+            <div class="image-container">
+                <img src="./assets/media/games-media/car.png" alt="Ona" width="370px" />
+                <audio id="imageAudio" src="./assets/media/games-audios/ona.m4a"></audio>
+            </div>
+            <div class="word-reading">
+                <!-- Yuqori qatordagi harflar -->
+                <div class="row top-row">
+                    <div class="cell" data-index="0"></div>
+                    <audio id="topAudioMA" src="./assets/media/games-audios/letter-o.m4a"></audio>
+                    <div class="cell" data-index="1"></div>
+                    <audio id="topAudioSHI" src="./assets/media/games-audios/letter-n.m4a"></audio>
+                    <div class="cell" data-index="2"></div>
+                    <audio id="topAudioNA" src="./assets/media/games-audios/letter-a.m4a"></audio>
+                </div>
+                <!-- Pastki qatordagi harflar -->
+                <div class="row bottom-row">
+                    <div class="cell" data-index="0">SHI</div>
+                    <audio id="bottomAudioSHI" src="./assets/media/games-audios/letter-n.m4a"></audio>
+                    <div class="cell" data-index="1">NA</div>
+                    <audio id="bottomAudioNA" src="./assets/media/games-audios/letter-a.m4a"></audio>
+                    <div class="cell" data-index="2">MA</div>
+                    <audio id="bottomAudioMA" src="./assets/media/games-audios/letter-o.m4a"></audio>
+                </div>
+            </div>
+        </div>
+        <div class="back-forward-btn">
+            <a href="./second-game-thirdpage.html">
+                <img src="./assets/media/forward-icon.png" alt="" width="200px">
+            </a>
+        </div>
+    </div>
+
+    <div class="bottom-container container congrats ">
+        <a href="./second-game-secondpage.html">
+            <img src="./assets/media/games-media/finish-image.svg" alt="" >
+        </a>        
+        <!-- <p bottom-container-title>Barakalla!</p> -->
+        <audio id="congratsAudio" src="./assets/media/games-audios/congratulations.m4a"></audio>
+
+    </div>
+
+    <script src="./js/second-game-secondpage.js"></script>
+</body>
+</html>
