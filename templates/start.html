@@ -1,24 +1,25 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/registration.css">
+    <link rel="stylesheet" href="{% static 'assets/css/registration.css' %}">
     <title>Boshlash</title>
 </head>
 <body>
      <!--SITE HEADER-->
      <!--Bilimdon Logosi-->
      <div class="container">
-        <a href="./index.html">
-        <img src="./assets/media/bilimdon-logo.svg" alt="">
+        <a href="{% url 'index' %}">
+        <img src="{% static 'assets/media/bilimdon-logo.svg' %}" alt="">
         </a>
      </div>
          
     <div class="container">
         <!--Form-image-->
         <div class="form-img">
-            <img src="./assets/media/bear.svg" alt="" width="450px">
+            <img src="{% static 'assets/media/bear.svg' %}" alt="" width="450px">
         </div>
 
         <!--Form-->
@@ -34,6 +35,6 @@
         
     </div>
     
-    <script src="./js/start.js"></script>
+    <script src="{% static 'js/start.js' %}"></script>
 </body>
 </html>

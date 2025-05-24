@@ -1,9 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/profile.css">
+    <link rel="stylesheet" href="{% static 'assets/css/profile.css' %}">
     <title>Profil</title>
 </head>
 <body>
@@ -12,13 +13,13 @@
         <div class="container site-header-container">
             <div class="left-icon">
                 <a href="./home.html">
-                    <img src="./assets/media/left-icon.svg" alt="">
+                    <img src="{% static '/assets/media/left-icon.svg' %}" alt="">
                 </a>
             </div>
             <h1>Profil</h1>
             <!--Bilimdon Logosi-->
             <a href="./index.html">
-                <img src="./assets/media/bilimdon-logo.svg" alt="" width="200px">
+                <img src="{% static 'assets/media/bilimdon-logo.svg' %}" alt="" width="200px">
             </a>
             
         </div>
@@ -34,11 +35,11 @@
             <p class="container change-image-icon">Rasmni o'zgartirish</p>
         </a>
         <h2>Ayupova Diana</h2>
-        <p>Qo‘shilgan sana: <span id="date">22.05.2025</span></p>
+        <p>Qo'shilgan sana: <span id="date">22.05.2025</span></p>
         <h3>Menig sertifikatlarim <span class="icon">📥</span></h3>
     </div>
 
-    <script src="./js/profile.js"></script>
+    <script src="{% static 'js/profile.js' %}"></script>
     
 </body>
 </html>

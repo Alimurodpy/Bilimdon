@@ -1,9 +1,10 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
     <title>Bilimdon</title>
 </head>
 <body>
@@ -11,50 +12,39 @@
     <header class="site-header">
         <div class="container site-header-container">
             <!--Bilimdon Logosi-->
-            <a href="./index.html">
-                <img src="./assets/media/bilimdon-logo.svg" alt="">
+            <a href="{% url 'index' %}">
+                <img src="{% static 'assets/media/bilimdon-logo.svg' %}" alt="">
             </a>
-            <button class="site-header-btn">O‘zbek</button>
+            <button class="site-header-btn">O'zbek</button>
         </div>
     </header>
 
     <!--Hero-->
     <section class="hero">
         <div class="container hero-container">
-            <img src="./assets/media/hero-img.png" alt="" width="550px" height="330px">
-            <!-- <script
-            src="https://unpkg.com/@dotlottie/player-component@2.7.12/dist/dotlottie-player.mjs"
-            type="module"
-          ></script>
-          
-          <dotlottie-player
-            src="https://lottie.host/25695797-0ee8-463b-9fd1-94c216f1a872/Yc7gCWLpET.lottie"
-            background="transparent"
-            speed="1"
-            style="width: 500px; height: 400px"
-            loop
-            autoplay
-          ></dotlottie-player> -->
-
-          
+            <img src="{% static 'assets/media/hero-img.png' %}" alt="" width="550px" height="330px">
             <div class="hero-content">
                 <div class="hero-content-text">
                     <p>
                         <strong>Alifboni bepul,
                         <span class="highlight">qiziqarli</span><br>
-                        va <span class="highlight">samarali</span> o‘rganing!</strong>
+                        va <span class="highlight">samarali</span> o'rganing!</strong>
                     </p>                    
                                           
                 </div>                
-                <button id="startBtn" class="hero-start-btn">Boshlash</button>
-                <button id="registerBtn" class="hero-register-btn">                        
-                    Ro‘yhatdan o‘tish
-                </button>
+                <a href="{% url 'start' %}">    
+                    <button id="startBtn" class="hero-start-btn">Boshlash</button>
+                </a>
+                <a href="{% url 'registration' %}">
+                    <button id="registerBtn" class="hero-register-btn">                        
+                        Ro'yhatdan o'tish
+                    </button>
+                </a>
             </div>
         </div>
     </section>
    
-    <script src="./js/main.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
 </body>
 </html>
 
